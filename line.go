@@ -73,3 +73,11 @@ func (l Line) LookLike(pattern string) bool {
 func (l Line) Value() string {
 	return string(l)
 }
+
+func (l Line) Lower() Line {
+	return Line(strings.ToLower(string(l)))
+}
+
+func (l Line) Upper() Line {
+	return Line(strings.ToUpper(string(l)))
+}

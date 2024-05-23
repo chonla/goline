@@ -100,3 +100,21 @@ func TestUnmatchedLookLike(t *testing.T) {
 
 	assert.False(t, ok)
 }
+
+func TestLowercasing(t *testing.T) {
+	l := goline.Line("# Title")
+	expected := goline.Line("# title")
+
+	result := l.Lower()
+
+	assert.Equal(t, expected, result)
+}
+
+func TestUppercasing(t *testing.T) {
+	l := goline.Line("# Title")
+	expected := goline.Line("# TITLE")
+
+	result := l.Upper()
+
+	assert.Equal(t, expected, result)
+}
