@@ -1,4 +1,4 @@
-module goline
+module github.com/chonla/goline
 
 go 1.22.3
 

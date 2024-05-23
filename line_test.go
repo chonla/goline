@@ -1,9 +1,9 @@
 package goline_test
 
 import (
-	"goline"
 	"testing"
 
+	"github.com/chonla/goline"
 	"github.com/stretchr/testify/assert"
 )
 
